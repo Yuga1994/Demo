@@ -4,11 +4,11 @@ provider "aws" {
   secret_key = "tN7xrFBOvzU+BRkhHBK3Yw3bIoLca+30/+DTWVvj"
   
 }
-resource "aws_vpc" "main" {
-  cidr_block       = "10.0.0.0/16"
+resource "aws_vpc" "demo" {
+  cidr_block       = "10.0.0.0/24"
   instance_tenancy = "default"
 
   tags = {
-    Name = "main"
+    Name = "demo"
   }
 }
